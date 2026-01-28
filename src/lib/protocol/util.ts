@@ -80,7 +80,7 @@ export async function sellTokenApprovalTx(args: {
           "function approve(address spender, uint256 amount) external",
         ]),
         functionName: "approve",
-        args: [GPv2VaultRelayer, MAX_APPROVAL],
+        args: [GPv2VaultRelayer, BigInt(sellAmount)],
       }),
     };
   }
